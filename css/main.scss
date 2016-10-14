@@ -1,0 +1,80 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//fonts
+$primary-font-family: Helvetica, sans-serif; 
+$primary-font-weight: 300;
+//colors
+$white:     #FFFFFF;
+$black:     #000000;
+$gray-50:   #FAFAFA;
+$gray-100:  #F5F5F5;
+$gray-200:  #EEEEEE;
+$gray-300:  #E0E0E0;
+$gray-400:  #BDBDBD;
+$gray-500:  #9E9E9E;
+$gray-900:  #212121;
+$red-50:    #FFEBEE;
+$red-100:   #FFCDD2;
+$red-200:   #EF9A9A;
+$red-300:   #EF7373;
+$red-400:   #EF5350;
+$red-500:   #F44336;
+$red-900:   #B71C1C;
+$blue-gray-50:      #ECEFF1;
+$blue-gray-100:     #CFD8DC;
+$blue-gray-200:     #B0BEC5;
+$blue-gray-300:     #90A4AE;
+$blue-gray-400:     #78909C;
+$blue-gray-500:     #607D8B;
+$blue-gray-600:     #546E7A;
+$blue-gray-700:     #455A64;
+$blue-gray-800:     #37474F;
+$blue-gray-900:     #263238;
+
+@mixin border-radius($radius) {
+    webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin box-shadow($shadow) {
+    webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin col-size($size) {
+    width: $size;
+}
+@mixin offset-left($offset) {
+    margin-left: $offset;
+}
+@mixin offset-right($offset) {
+    margin-right: $offset;
+}
+@mixin horizontally-center() {
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin margin-top-bottom ($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+@mixin no-margins() {
+    margin: 0 auto;
+}
+@mixin background-font-color($background-color, $font-color) {
+    background-color: $background-color;
+    color: $font-color;
+}
+
+//imports
+//partials from `sass_dir` (defaults to `_sass`)
+@import
+        "pocketgrid",
+        "base",
+        "layout",
+        "syntax-highlighting";

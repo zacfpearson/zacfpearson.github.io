@@ -1,0 +1,20 @@
+<header>
+    <canvas id='headerCanvas'></canvas>
+    <img id='profilePicture' src="{{ site.baseurl }}/media/profilePicture.jpg" alt="Profile Picture" />
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <h2>{{ site.description }}</h2>
+    <div id='icons'>
+        <a href="https://www.facebook.com/{{site.data.contact.facebook}}">
+            <i class="icon fa fa-facebook fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/{{site.data.contact.twitter}}">
+            <i class="icon fa fa-twitter fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/{{site.data.contact.github}}">
+            <i class="icon fa fa-github fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/{{site.data.contact.linkedin}}">
+            <i class="icon fa fa-linkedin fa-3x" aria-hidden="true"></i>
+        </a>
+    </div>
+</header>

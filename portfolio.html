@@ -1,0 +1,25 @@
+---
+layout: default
+title: Projects
+permalink: /portfolio/
+---
+
+<main>
+    <section id='projects'>
+        {% for project in site.data.portfolio.projects %}
+            <div class='project-outer'>
+                <div class='project-inner'>
+                    <h2>
+                        <a href={{project.site}} target='_blank'>{{project.project}}</a>
+                    </h2>
+                    <p>{{project.description}}</p>
+                    <p>Check out the live 
+                        <a href={{project.site}} target='_blank'>application </a>
+                        or the 
+                        <a href = {{project.repo}} target='_blank'>Github repository</a>!
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</main>

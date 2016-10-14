@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<main>
+    <section id='posts'">
+        <ul class="post-list">
+            {% for post in site.posts %}
+                <div class='posts-outer'>
+                    <div class='posts-inner'>
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </ul>
+    </sections>
+</main>

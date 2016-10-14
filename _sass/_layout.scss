@@ -1,0 +1,265 @@
+//header
+header {
+    @extend .block-group;
+    color: black;
+    padding: 2.5% 5%;
+    border-bottom: 1px solid $blue-gray-900;
+}
+header h1 {
+    text-align: center;
+}
+header h2 {
+    text-align: center;
+}
+#profilePicture {
+    @include col-size(20%);
+    @include border-radius(50%);
+    @include box-shadow(2px 2px 5px $blue-gray-900);
+    @include horizontally-center();
+}
+#headerCanvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+//max-width: 200px;
+@media screen and (max-width: 768px) {
+    #profilePicture {
+        width: 100%;
+    }
+}
+#icons {
+    @include col-size(33%);
+    @include horizontally-center();
+}
+#icons a {
+    text-align: center;
+    color: $gray-900;
+}
+#icons a:hover {
+    color: $red-900;
+}
+#icons .icon {
+    @include col-size(21%);
+    @include offset-left(1%);
+    @include offset-right(1%);
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    #icons .icon {
+        width: 31%;
+    }
+}
+//nav
+nav {
+    @include col-size(100%);
+    @include box-shadow(0 5px 5px $gray-400);
+    background-color: $gray-200;
+    padding: 1%;
+}
+nav ul {
+    @extend .block-group;
+}
+nav li {
+    @extend .block;
+    @include col-size(32.3%);
+    @include box-shadow(0 2px 3px $gray-400);
+    @include offset-left(0.5%);
+    @include offset-right(0.5%);
+    display: inline-block;
+    background-color: $gray-100;
+    padding: 2%;
+    text-align: center;
+    cursor: pointer;
+}
+nav li a:link {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 175%;
+    font-weight: 500;
+}
+nav li:hover {
+    background-color: $gray-200;
+    text-decoration: none;
+}
+//footer
+footer {
+    @include col-size(100%);
+    @include background-font-color($blue-gray-500, $gray-50);
+    border-top: 1px solid $blue-gray-900;
+    padding: 2%;
+    text-align: center;
+}
+//main
+main {
+    @include col-size(100%);
+    @include background-font-color($gray-100, $gray-900);
+}
+//cover letter
+#coverletter {
+    @extend .block-group;
+    padding: 0.5% 10%;
+}
+@media screen and (max-width: 768px) {
+    #cover {
+        padding: 0.5% 2%;
+    }
+}
+#coverletter .letter-outer {
+    @include box-shadow(0 2px 3px $gray-400);
+    background-color: $gray-200;
+    padding: 5%;
+}
+#coverletter .letter-inner {
+    @include box-shadow(0 2px 3px $gray-400);
+    @include border-radius(0.5%);
+    background-color: $gray-50;
+    text-align: justify;
+    padding: 5%;
+}
+//resume
+#resume {
+    @extend .block-group;
+    padding: 0.5% 10%;
+}
+@media screen and (max-width: 768px) {
+    #resume {
+        padding: 0.5% 2%;
+    }
+}
+#resume .section {
+    @extend .block-group;
+    @include box-shadow(0 2px 3px $gray-400);
+    @include margin-top-bottom(1%);
+    padding: 5%;
+    background-color: $gray-200;
+}
+.section .heading {
+    @include col-size(100%);
+    @include box-shadow(0 2px 3px $gray-400);
+    @include background-font-color($gray-50, $red-400);
+    text-align: center;
+    padding: 2%;
+}
+#resume .organization {
+    @extend .block-group;
+    @include box-shadow(0 0 5px $gray-400);
+    @include col-size(100%);
+    border: 1px solid $gray-400;
+    padding: 5%;
+    background-color: $gray-50;
+}
+.organization .name {
+    @include col-size(100%);
+    @include no-margins();
+    border-bottom: 1px solid $gray-900;
+    padding: 2%;
+}
+.organization .position {
+    @extend .block-group;
+    @include col-size(100%);
+    @include border-radius(0.5%);
+    padding: 2%;
+}
+.position .title {
+    @extend .block;
+    @include col-size(60%);
+    @include no-margins();
+    display: inline-block;
+    text-align: left;
+}
+.position .date {
+    @extend .block;
+    @include col-size(40%);
+    @include no-margins();
+    display: inline-block;
+    text-align: right;
+}
+@media screen and (max-width: 768px) {
+    .position .date {
+        text-align: left;
+    }
+}
+.position .description {
+    @extend .block;
+    @include col-size(100%);
+}
+//project
+#projects {
+    @include col-size(100%);
+    padding: 3% 10%;
+}
+@media screen and (max-width: 768px) {
+    #projects {
+        padding: 1% 2%;
+    }
+}
+#projects .project-outer {
+    @include col-size(100%);
+    @include box-shadow(0 2px 3px $gray-400);
+    @include margin-top-bottom(1%);
+    background-color: $gray-200;
+    padding: 5%;
+}
+#projects .project-inner {
+    @include col-size(100%);
+    @include border-radius(0.5%);
+    @include box-shadow(0 2px 3px $gray-400);
+    background-color: $gray-100;
+    padding: 5%;
+}
+//posts
+#posts {
+    @include col-size(100%);
+    padding: 3% 10%;
+}
+@media screen and (max-width: 768px) {
+    #posts {
+        padding: 1% 2%;
+    }
+}
+#posts .posts-outer {
+    @include col-size(100%);
+    @include box-shadow(0 2px 3px $gray-400);
+    @include margin-top-bottom(1%);
+    background-color: $gray-200;
+    padding: 5%;
+}
+#posts .posts-inner {
+    @include col-size(100%);
+    @include border-radius(0.5%);
+    @include box-shadow(0 2px 3px $gray-400);
+    background-color: $gray-100;
+    padding: 5%;
+}
+//post
+#post {
+    @include col-size(100%);
+    padding: 3% 10%;
+}
+@media screen and (max-width: 768px) {
+    #post {
+        padding: 1% 2%;
+    }
+}
+#post .post-outer {
+    @include col-size(100%);
+    @include box-shadow(0 2px 3px $gray-400);
+    @include margin-top-bottom(1%);
+    background-color: $gray-200;
+    padding: 5%;
+}
+#post .post-inner {
+    @include col-size(100%);
+    @include border-radius(0.5%);
+    @include box-shadow(0 2px 3px $gray-400);
+    background-color: $gray-100;
+    padding: 5%;
+}

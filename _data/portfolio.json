@@ -1,0 +1,16 @@
+{
+    "projects": [
+    {
+        "project": "Scorecard",
+        "site": "",
+        "repo": "https://github.com/zacfpearson/ScoreCard",
+        "description": "A web-based portal for creating baseball scorecards for any game."
+    },
+    {
+        "project": "Projects",
+        "site": "",
+        "repo": "https://github.com/zacfpearson/Portfolio",
+        "description": "Miscellaneous collection of programming projects."
+    }
+	]
+}
