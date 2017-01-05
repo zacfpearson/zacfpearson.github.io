@@ -2,15 +2,15 @@
     "projects": [
     {
         "project": "Scorecard",
-        "site": "",
-        "repo": "https://github.com/zacfpearson/ScoreCard",
-        "description": "A web-based portal for creating baseball scorecards for any game."
+        "site": "http://vbs.ddns.net/ScoreCard-PHP-and-textfiles/ScoreCard.html",
+        "repo": "https://github.com/zacfpearson/ScoreCard-PHP-and-textfiles",
+        "description": "A PHP-based portal for creating baseball scorecards for any game and sharing them with others."
     },
     {
         "project": "Projects",
-        "site": "",
-        "repo": "https://github.com/zacfpearson/Portfolio",
-        "description": "Miscellaneous collection of programming projects."
+        "site": "http://vbs.ddns.net/TodoDjango/todo/",
+        "repo": "https://github.com/zacfpearson/TodoDjango",
+        "description": "A Django web application that allows people to add a memo for a friend to accomplish."
     }
 	]
 }
