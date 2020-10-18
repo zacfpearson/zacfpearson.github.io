@@ -1,0 +1,3 @@
+[submodule "roonr/themes/ananke"]
+	path = roonr/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
